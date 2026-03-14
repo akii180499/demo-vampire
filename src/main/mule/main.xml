@@ -22,7 +22,7 @@ output application/json
 import between from dw::core::Periods
 
 fun getAge(birthDate: Date, deathDate: Date | Null) = do {
-	var date2 = deathDate  {
+var date2 = deathDate match {
 		case d is Date -> d
 		else -> now() as Date
 	}

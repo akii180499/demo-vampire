@@ -48,7 +48,7 @@ payload map do {
         isVampire: isVampire,
         wasVampire: wasVampire,
         couldBeVampire: couldBeVampire,
-        text: "$($.firstName) $($.lastName) $(vampireStatus)"
+        text: "$($.lastName) $($.lastName) $(vampireStatus)"
     }
 }]]></ee:set-payload>
 			</ee:message>

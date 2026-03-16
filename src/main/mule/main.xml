@@ -32,7 +32,7 @@ fun getAge(birthDate: Date, deathDate: Date | Null) = do {
 ---
 payload map do {
     var isAlive = $.deathDate == null
-    var age = 
+var age = getAge($.birthDate, $.deathDate)
     var isVampire = age >= 120 and isAlive
     var wasVampire = age >= 120 and not isAlive
     var couldBeVampire = age >= 100 and isAlive

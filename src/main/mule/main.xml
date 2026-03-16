@@ -19,7 +19,7 @@ http://www.mulesoft.org/schema/mule/anypoint-mq http://www.mulesoft.org/schema/m
 			<ee:message >
 				<ee:set-payload ><![CDATA[%dw 2.0
 output application/json
-import between from dw::core::Time
+import between from dw::core::Periods
 
 fun getAge(birthDate: Date, deathDate: Date | Null) = do {
 	var date2 = deathDate match {

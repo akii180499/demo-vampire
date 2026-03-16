@@ -24,7 +24,7 @@ import between from dw::core::Periods
 fun getAge(birthDate: Date, deathDate: Date | Null) = do {
 	var date2 = deathDate match {
 		case d is Date -> d
-		else -> now() as Timw
+else -> now() as Date
 	}
 	---
     between(date2, birthDate).years

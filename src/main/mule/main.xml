@@ -12,7 +12,7 @@ http://www.mulesoft.org/schema/mule/anypoint-mq http://www.mulesoft.org/schema/m
 	<anypoint-mq:config name="Anypoint_MQ_Config" doc:name="Anypoint MQ Config" doc:id="d985c127-02bf-4f78-8f29-923a421ca883" >
 		<anypoint-mq:connection clientId="test" clientSecret="test" />
 	</anypoint-mq:config>
-	<flow name="main:http-listener" doc:id="a9d7ca06-9f01-45c8-b980-402bee733a50" >
+	<flow name="setCustomerPayload" doc:id="a9d7ca06-9f01-45c8-b980-402bee733a50" >
 		<http:listener doc:name="Listener" doc:id="6197594a-acc0-466e-82a7-d71768e10bc7" config-ref="HTTP_Listener_config" path="/test"/>
 		<logger level="INFO" doc:name="START" doc:id="43d24a2f-4609-46fd-b46e-7a7cd86b9f98" message="START FLOW"/>
 		<ee:transform doc:name="Add fields" doc:id="0f74730c-a231-4196-aed9-b3765a77fd5e" >

@@ -17,7 +17,9 @@ http://www.mulesoft.org/schema/mule/anypoint-mq http://www.mulesoft.org/schema/m
 		<logger level="INFO" doc:name="START" doc:id="43d24a2f-4609-46fd-b46e-7a7cd86b9f98" message="START FLOW"/>
 		<ee:transform doc:name="Add fields" doc:id="0f74730c-a231-4196-aed9-b3765a77fd5e" >
 			<ee:message >
-<ee:set-payload ><![CDATA[
+<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+import between from dw::core::Periods
 output application/json
 import between from dw::core::Periods
 

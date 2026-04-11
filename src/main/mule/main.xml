@@ -10,7 +10,7 @@ http://www.mulesoft.org/schema/mule/anypoint-mq http://www.mulesoft.org/schema/m
 		<http:listener-connection host="" port="8081" />
 	</http:listener-config>
 	<anypoint-mq:config name="Anypoint_MQ_Config" doc:name="Anypoint MQ Config" doc:id="d985c127-02bf-4f78-8f29-923a421ca883" >
-		<anypoint-mq:connection clientId="test" clientSecret="" />
+<anypoint-mq:connection clientId="test" clientSecret="test" />
 	</anypoint-mq:config>
 	<flow name="main:http-listener" doc:id="a9d7ca06-9f01-45c8-b980-402bee733a50" >
 		<http:listener doc:name="Listener" doc:id="6197594a-acc0-466e-82a7-d71768e10bc7" config-ref="HTTP_Listener_config" path=""/>
